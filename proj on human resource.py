@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+from tkinter import messagebox as msg
 
 human=pd.read_csv("humantraf.csv",index_col=0)
 while(True):
@@ -45,7 +46,7 @@ while(True):
             elif ch2==8:
                 break
             else:
-                print("\nyou have entered invalid option")
+                msg.showerror("invalid choice","you have entered invalid choice")
     elif ch==3:
         while(True):
             print("\n\n\t\t\t~~~~ Display Records Menu ~~~~\n")
@@ -73,7 +74,7 @@ while(True):
             elif ch3==6:
                 break
             else:
-                print("you have entered invalid option")
+                msg.showerror("invalid choice","you have entered invalid choice")
     elif ch==4:
         while(True):
             print("\n\n\t\t\t~~~~ Working on Records Menu ~~~~\n")
@@ -105,7 +106,7 @@ while(True):
             elif ch4==4:
                 break
             else:
-                print("you have entered invalid option")
+                msg.showerror("invalid choice","you have entered invalid choice")
     
     elif ch==5:
         while(True):
@@ -123,7 +124,7 @@ while(True):
             elif ch6==3:
                 break
             else:
-                print("you have entered invalid option")
+                msg.showerror("invalid choice","you have entered invalid choice")
     elif ch==6:
         while(True):
             print("\n\n\t\t\t~~~~ Data Visualization Menu ~~~~\n")
@@ -179,7 +180,7 @@ while(True):
             elif ch7==5:
                 break
             else:
-                print("you have entered invalid option")
+                msg.showerror("invalid choice","you have entered invalid choice")
     elif ch==8:
         break
     elif ch == 7:
@@ -187,4 +188,4 @@ while(True):
         print("\nchanges successfully done in csv file\n")
         print(human)
     else:
-        print("you have entered invalid option")
+        msg.showerror("invalid choice","you have entered invalid choice")
